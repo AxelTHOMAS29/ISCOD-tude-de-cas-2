@@ -24,7 +24,7 @@ class Menu {
             HTMLUListElement.appendChild(HTMLIElement);
             
             HTMLIElement.addEventListener('click', evt => {
-                console.log(`Clic sur ${element}`);
+                console.log(`Clic sur ${labels[evt.detail.index]}`);
             });
         });
 
