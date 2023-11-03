@@ -24,7 +24,7 @@ class Menu {
             HTMLUListElement.appendChild(HTMLIElement);
             
             HTMLIElement.addEventListener('click', evt => {
-                console.log(`Clic sur ${labels[evt.detail.index]}`);
+                console.log(`Clic sur ${element}`);
             });
         });
 
@@ -41,9 +41,9 @@ class Menu {
             HTMLUListElement.appendChild(HTMLIElement);
             
             HTMLIElement.addEventListener('click', evt => {
-                console.log(`Clic sur ${labels[evt.detail.index]}`);
+                console.log(`Clic sur ${element}`);
             });
-        }); 
+        }); return HTMLUListElement;
     } 
     setDisp(disp){
         this.disp = disp;
